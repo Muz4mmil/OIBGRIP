@@ -5,13 +5,13 @@
 }
 
 :root{
-    --bgbody : linear-gradient(90deg, #7B4397,#dc2430);
+    --bgbody : url(mesh.png);
     --bgr : rgba(255, 255, 255, 0.5);
     --fnt : black;
 }
 
 .darkmode{
-    --bgbody : linear-gradient(90deg, #000428,#004e92);
+    --bgbody : linear-gradient(90deg, #000428c4,#000428c4), url(mesh.png);
     --bgr : rgba(0, 0, 0, 0.75);
     --fnt : white;
 }
@@ -20,7 +20,6 @@ body{
     display: flex;
     height: 100vh;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: url(mesh.png);
     background: var(--bgbody);
     background-size: 100% 100%;
 }
@@ -44,7 +43,8 @@ body{
     margin-top: 10px;
     line-height: 75px;
     font-family: monospace;
-    font-size: 40px;
+    font-size: 41px;
+    color: var(--fnt);
     padding: 5px;
     border: none;
     border-radius: 7px;
@@ -92,7 +92,6 @@ body{
     top: 10px;
     height: 35px;
     width: 35px;
-    /* filter: invert(); */
     border-radius: 20px;
     background: var(--bgr);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -120,6 +119,7 @@ body{
 }
 .credit a{
     color: white;
+    opacity: .75;
 }
 
 
